@@ -13,7 +13,7 @@ This project is licensed under the Apache License 2.0. See the file header in th
 ## Installation
 
 ### 1. Clone or Download the Script
-Save the Python file as `address_mgrs_geocodio_direct.py` in your working directory.
+Save the Python file as `addr2mgrs.py` in your working directory.
 
 ### 2. Set Up a Virtual Environment (Recommended)
 Navigate to your project folder and create a clean environment using your package manager:
@@ -57,7 +57,7 @@ The tool uses standard CLI arguments via `argparse`. You must specify either `--
 Provide a human-readable street address string wrapped in quotes to generate a 1-meter precision coordinate string:
 
 ```bash
-python address_mgrs_geocodio_direct.py --to-mgrs "1600 Amphitheatre Parkway, Mountain View, CA"
+python addr2mgrs.py --to-mgrs "1600 Amphitheatre Parkway, Mountain View, CA"
 ```
 
 **Output:**
@@ -70,7 +70,7 @@ Full Address:   1600 Amphitheatre Pkwy, Mountain View, CA 94043
 Provide an MGRS string to resolve the exact coordinate block back into a postal street address:
 
 ```bash
-python address_mgrs_geocodio_direct.py --to-address "10SEG0238981231"
+python addr2mgrs.py --to-address "10SEG0238981231"
 ```
 
 **Output:**
